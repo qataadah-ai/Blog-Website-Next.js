@@ -7,14 +7,13 @@ export async function getPosts() {
   if (!res.ok) throw new Error("Failed to fetch");
   return res.json();
 }
-
-export async function getPost() {
+export async function getPost(id) {
   const res = await fetch(`${Base_Url}/posts/${id}`, {
     next: { revalidate: 3600 },
   });
   if (!res.ok) {
     if (res.status === 404) return null;
-    throw new Error("Failed to fetch post");
+    throw new Error('Failed to fetch post');
   }
   return res.json();
 }
