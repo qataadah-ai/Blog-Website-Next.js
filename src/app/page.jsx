@@ -1,3 +1,4 @@
+import BlogList from "@/components/BlogList";
 import { getPosts } from "@/lib/api";
 import Link from "next/link";
 export const metadata = {
@@ -87,6 +88,8 @@ export default async function Home() {
               </div>
             </div>
           )}
+
+         <BlogList initialPosts={posts}/>
         </div>
       </main>
     );
