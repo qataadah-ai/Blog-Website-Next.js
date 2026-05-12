@@ -12,6 +12,7 @@ A simple blog website built with Next.js where users can browse and read posts.
 - Blog detail page (dynamic routes)
 - Search posts
 - Loading states
+- 🌗 Dark / Light theme support (next-themes)
 - Error handling
 - Basic SEO setup
 
